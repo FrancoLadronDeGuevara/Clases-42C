@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Instituto NOA">
+    <meta name="description" content="Curso Programacion Web Creando nuestra Primera Pagina Web">
+    <meta name="keywords" content="curso, programacion, web, desarrollo, frontend, backend, html, css, javascript">
+    <title>Practicando HTML</title>
+    <style>
+        body {
+            background-color: #53e809
+        }
+
+        h2 {
+            color: white;
+        }
+
+        #subtitulo-titulos {
+            font-size: 50px;
+        }
+
+        #subtitulo-atributos {
+            text-decoration: underline;
+        }
+
+        .grupo1 {
+            background-color: red;
+        }
+
+        #caja {
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            border: 5px solid white;
+            border-radius: 10px;
+            margin-top: 50px;
+            padding: 10px;
+            box-shadow: 5px 5px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <header style>
+        <h1>Practicando HTML</h1>
+        <hr>
+    </header>
+    <section>
+        <h2 id="subtitulo-titulos">Seccion de titulos</h2>
+        <h2 class="grupo1">Titulo h2</h2>
+        <h3 class="grupo1">Titulo h3</h3>
+        <h4>Titulo h4</h4>
+        <h5>Titulo h5</h5>
+        <h6>Titulo h6</h6>
+        <p>Esto es un parrafo</p>
+        <hr>
+    </section>
+    <section>
+        <h2 id="subtitulo-atributos">Seccion de etiquetas con atributos</h2>
+        <a href="https://www.google.com" target="_blank">Link a Google</a>
+        <img src="./imagenes/imagen_logos.jpg" alt="imagen con 3 logos, ccs3, html5 y javascript" />
+        <hr>
+    </section>
+    <section>
+        <h2>Seccion de listas</h2>
+        <ul class="grupo1">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+        <ol>
+            <li><code>Elemento</code> 1</li>
+            <li><b>Elemento</b> 2</li>
+            <li>Elemento 3</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Seccion Multimedia</h2>
+        <video controls src="./assets/videos/musica.mp">
+            Tu navegador no soporta este video
+        </video>
+        <br>
+        <audio loop controls src="./assets/musica/Nokia 3220 Ringtone - Espionage.m4">
+            Tu navegador no soporta audios
+        </audio>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jUyZiHKsZkA?si=MNjbHx8lVouvT7Bf"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/album/5UecDIxoca5aq0Xko7VcuE?utm_source=generator" width="100%"
+            height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.252669317112!2d-65.216172127481!3d-26.83191473830545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d81264ba31b%3A0x9e0d97e3c110c625!2sPcia%20de%20Jujuy%20165%2C%20T4000%20San%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1730411303639!5m2!1ses-419!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr>
+    </section>
+    <section>
+        <h2><i>Etiqueta DIV</i></h2>
+        <p>Esto es un parrafo de prueba <mark>TEXTO</mark></p>
+        <div>
+            <img src="./assets/imagenes/imagen_logos.jpg">
+            <p>Esto es un parrafo de prueba</p>
+        </div>
+        <hr>
+    </section>
+    <section>
+        <h2>Seccion de Formularios</h2>
+        <form onsubmit="">
+            <div>
+                <label for="nombre">NOMBRE</label>
+                <input id="nombre" type="text" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div>
+                <label for="contraseña">CONTRASEÑA</label>
+                <input type="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" placeholder="Ingresa tu email" required>
+            </div>
+            <div>
+                <select>
+                    <option value="1">Opcion 1</option>
+                    <option value="2">Opcion 2</option>
+                    <option value="3">Opcion 3</option>
+                </select>
+            </div>
+            <div>
+                <label for="radio">MASCULINO</label>
+                <input type="radio" name="genero" value="M">
+
+                <label for="radio">FEMENINO</label>
+                <input type="radio" name="genero" value="F">
+
+                <label for="radio">OTRO</label>
+                <input type="radio" name="genero" value="O">
+            </div>
+            <div>
+                <input id="terminos" type="checkbox">
+                <label for="terminos">Terminos y condiciones</label>
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR FORMULARIO">
+            </div>
+        </form>
+        <hr>
+    </section>
+    <section>
+        <h2>Seccion de Tablas</h2>
+        <table border="10">
+            <tr>
+                <th>COLUMNA1</th>
+                <th>COLUMNA2</th>
+            </tr>
+            <tr>
+                <td>Fila1-Col1</td>
+                <td>Fila1-Col2</td>
+            </tr>
+            <tr>
+                <td>Fila2-Col1</td>
+                <td>Fila2-Col2</td>
+            </tr>
+        </table>
+    </section>
+    <div id="caja">
+        ESTO ES UN DIV
+    </div>
+</body>
+
+</html>
