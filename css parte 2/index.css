@@ -1,34 +1,70 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-#header-principal {
+#header {
   width: 100%;
-  height: 50px;
-  box-shadow: 0px 5px 10px black;
-  padding: 5px;
+  padding: 16px 0px;
+  position: relative;
 }
 
 #logo {
   height: 100%;
+  margin-left: 50px;
 }
 
-#botones{
-    width: 100%;
-    height: 100%;
-    display: inline;
-    position: absolute;
-    top: 15px;
-    margin-left: 100px;
-}
-
-.botones-header {
+#boton-aula {
+  position: absolute;
+  padding: 16px 24px;
   border: none;
-  background-color: #d81d26;
-  padding: 8px 16px;
-  text-transform: uppercase;
-  font-weight: bolder;
+  background-color: #FE7614;
   color: white;
-  border-radius: 50px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  right: 100px;
+  top: 30px;
+}
+
+#boton-aula:hover {
+  background-color: #363434;
+}
+
+#banner{
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/estudiantes.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#filter{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fe7614b6;
+}
+
+#banner-titulo{
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  top: 50%;
+  left: 10%;
+  width: 500px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#boton-cursos{
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: none;
+  color: #FE7614;
+  font-weight: bolder;
+  cursor: pointer;
 }
